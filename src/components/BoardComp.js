@@ -6,8 +6,8 @@ const TileCount = 1000
 
 const Board = ()=>{
     return(
-        <div>
-            <p>Hello World!</p>
+        <div className="board" >
+            {/*console.log(TileCount, "from board")*/}
             <Tile num={TileCount} />
         </div>
     );

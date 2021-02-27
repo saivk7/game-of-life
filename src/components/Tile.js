@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Tile = () =>{
+const Tile = ({value}) =>{
     return(
-            <div className="tile" >
+            <div id={value} key={value} className="tile" >
                 
             </div>
     );
