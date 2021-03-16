@@ -10,15 +10,19 @@
   height:auto;
 }
 .tile{
-  height:15px ;
-  width:15px;
-  border: 1px solid red
-  ;
+  height: 15px;
+width: 15px;
+box-sizing: border-box;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+float: left;
+font-size: 7px;
+color: orange;
 }
-
-.mainBoard{
+.board{
   height:450px;
   width: 750px;
   border: 1px solid;
   margin: 20px;
 }
+

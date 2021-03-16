@@ -5,9 +5,9 @@ import Tile from './Tile';
 
 const createBoard = () =>{
     var retBoard = [];
-    for(var i=0;i<3;i++){
+    for(var i=0;i<30;i++){
         retBoard[i]= [];
-        for(var j=0; j<5;j++){
+        for(var j=0; j<50;j++){
             retBoard[i].push(j);
         }
     }
@@ -34,13 +34,17 @@ const Board = ()=>{
 
     const arr = oneDimensional(currentBoard);
     console.log("1d array is " , arr);
-    
+    const board = arr.map((tile,i)=>{
+        return(
+            <Tile id={i} key={i} />
+        );
+    });
 
     return(
         <div className="mainBoard">
             <div className="board" >
-                {/*console.log(TileCount, "from board") 
-                <Tile value={i} />*/}
+                {/*console.log(TileCount, "from board")*/}
+                {board}
                 
             </div>
         </div>
