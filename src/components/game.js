@@ -1,20 +1,63 @@
-
-/* import './App.css';
-
-import React from 'react';
-import Tile from './components/Tile';
-
+/*
+List of funcitons available
+1.createBoard: Creates a 2D board 
+2.oneDimensional: converts a passed in 2 dimensional array to 1 dimension
 
 
+*/
 
-const boardArr = 
+//for creating a board
+const createBoard = () =>{
+    var retBoard = [];
+    for(var i=0;i<30;i++){
+        retBoard[i]= [];
+        for(var j=0; j<50;j++){
+            var random = Math.random()-0.3;
+            retBoard[i].push(random);
+        }
+    }
+    console.log("the retBoard is ", retBoard);
+    return retBoard;
+}
 
-const board = this.convertToOneDimension(this.state.currentBoard);
+const oneDimensional = (arr) =>{
+    var retArr = [];
+    //console.log("passed array is ", arr);
+    for(var i=0;i<arr.length; i++){
+        //console.log(arr[i]);
+        retArr = retArr.concat(arr[i]);
+        //console.log("ret arra" ,retArr);
+    }
+    return retArr;
+}
 
-const drawBoard = board.map((cell, i) => {
-    let color = cell === 0 ? dead : alive;
-    return <div id={i} onClick={this.clickChanger} className='cell' style={color} key={i}></div>
-});
 
 
- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export {createBoard,oneDimensional};

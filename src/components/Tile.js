@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Tile = ({id,key}) =>{
+const Tile = ({style,id}) =>{
 
-
+    /* the styling is done using the border box and float left properties */
     return(
-        <div className="tile" id={id} key={key}>{}</div>
-    );
+        <div className="tile" style={style}id={id}>{}</div>
+    
+        
+        );
 }
 
 
