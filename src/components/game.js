@@ -32,32 +32,15 @@ const oneDimensional = (arr) =>{
 }
 
 
+const nextBoard = () =>{
+    return(
+        <div></div>
+    );
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export {createBoard,oneDimensional};
+export {createBoard,oneDimensional,nextBoard};
