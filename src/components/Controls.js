@@ -1,11 +1,11 @@
 import React from 'react';
 
-var game = require('./game');
+//var game = require('./game');
 
-const Controller = () =>{
+const Controller = ({nextBoard}) =>{
 
     return(
-        <button onClick={game.nextBoard}> Forward</button>
+        <button onClick={nextBoard}> Forward</button>
     );
 }
 
