@@ -7,6 +7,7 @@ List of funcitons available
 */
 
 //for creating a board
+
 const createBoard = () =>{
     var retBoard = [];
     for(var i=0;i<30;i++){
@@ -38,9 +39,17 @@ const nextBoard = () =>{
     );
 }
 
+const tileClick = (e) =>{
+    /* console.log("some one clicked a tile");
+    console.log(e.target.style);
+    var id = e.target.id; */
+    
+
+}
 
 
 
 
 
-export {createBoard,oneDimensional,nextBoard};
+
+export {createBoard,oneDimensional,nextBoard,tileClick};
