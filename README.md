@@ -1,6 +1,8 @@
 # Conway's Game of Life
 
-This project is live at []
+This React project can be viewed live at [Game of Life](https://saivk7.github.com/game-of-life).
+
+You can know more about the 'game' from the creator himself [here](https://www.youtube.com/watch?v=R9Plq-D1gEk)!
 
 
 
