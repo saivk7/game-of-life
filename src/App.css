@@ -43,7 +43,14 @@
   margin: 20px;
   
 }
+.next{
+  background-color: #67dd3f;
+  border: #66ff33;
+  border-radius: 2px;
 
+
+
+}
 .live{
   color: aqua;
 }

@@ -28,7 +28,12 @@ function App() {
 
     let row = Math.floor(id/50);
     let col = id % 50;
-    currentBoard[row][col] = 1;
+    if(currentBoard[row][col]<0.2){ //refer game logic 
+      currentBoard[row][col] = 1;
+    }else{
+      currentBoard[row][col] = 0;
+    }
+    
     setBoard(currentBoard);
 
     setChange(change+1);

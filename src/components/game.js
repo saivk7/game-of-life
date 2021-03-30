@@ -13,7 +13,8 @@ const createBoard = () =>{
     for(var i=0;i<30;i++){
         retBoard[i]= [];
         for(var j=0; j<50;j++){
-            var random = Math.random()-0.3;
+            var random = Math.random()-0.3; //prevents too many green cells
+            //any chnages to 0.3 will effect the click funciton so change it there too.
             retBoard[i].push(random);
         }
     }

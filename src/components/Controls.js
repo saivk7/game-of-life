@@ -5,7 +5,7 @@ import React from 'react';
 const Controller = ({nextBoard}) =>{
 
     return(
-        <button onClick={nextBoard}> Forward</button>
+        <button className="next" onClick={nextBoard}> Next Iteration</button>
     );
 }
 
